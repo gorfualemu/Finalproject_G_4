@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Finalproject_G_4.UI {
+namespace Finalproject_G_4.UI.homepage {
     
     
-    public partial class Home {
+    public partial class ViewNotice {
         
         /// <summary>
-        /// img2 control.
+        /// gvnotice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image img2;
+        protected global::System.Web.UI.WebControls.GridView gvnotice;
     }
 }

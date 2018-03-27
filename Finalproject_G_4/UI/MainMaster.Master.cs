@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-
 namespace Finalproject_G_4.UI
 {
     public partial class MainMaster : System.Web.UI.MasterPage
@@ -19,42 +13,45 @@ namespace Finalproject_G_4.UI
             lblprofile.Text = " well come to gorfu  " + username;
             hiderole();
             getrole();
-         
+
         }
 
         private void hiderole()
         {
 
-            h1.Visible = false;
-            a1.Visible = false;
-            m1.Visible = false;
-            c1.Visible = false;
-            n1.Visible = false;
-            login.Visible = false;
+             home.Visible = false;
+             account.Visible = false;
+             registration.Visible = false;
+             exam.Visible = false;
+             attendance.Visible = false;
+             notice.Visible = false;
+             report.Visible = false;
         }
 
-        private void getrole()
+       private void getrole()
         {
-            if (username == "gorf")
+            if (username == "admin")
             {
-                h1.Visible = true;
-                a1.Visible = true;
-                m1.Visible = false;
-                c1.Visible = false;
+               home.Visible = true;
+               registration.Visible = true;
+               account.Visible = true;
+               report.Visible = true;
+               notice.Visible = true;
             }
-            if (username == "ema")
+            if (username == "instman")
             {
-                h1.Visible = false;
-                a1.Visible = false;
-                m1.Visible = true;
-                c1.Visible = true;
+               home.Visible = true;
+               registration.Visible = true;
+               notice.Visible = true;
+               report.Visible = true;
             }
-            if (username == "asme")
+            if (username == "examiner")
             {
-                h1.Visible = true;
-                a1.Visible = true;
-                m1.Visible = true;
-                c1.Visible = true;
+                home.Visible =true;
+                exam.Visible = true;
+                attendance.Visible = true;
+                notice.Visible = true;
+               
             }
         }
 

@@ -17,25 +17,21 @@ namespace Finalproject_G_4.UI
 
         }
 
-        protected void btnlogin_Click(object sender, EventArgs e)
+        protected void imgbtnlogin_Click(object sender, ImageClickEventArgs e)
         {
             CreateAccount acc = new CreateAccount();
 
             Session["username"] = txtusername.Text;
             Session["password"] = txtpassword.Text;
-           
+
             if (txtusername.Text == "" || txtpassword.Text == "")
             {
-               
-               massagesuccess.Text = "please enter username and password !";
+                msgsuccess.Text = "please enter username and password !";
             }
-            if (txtusername.Text == "gorf" || txtusername.Text == "asme"|| txtusername.Text == "ema"  )
+            if (txtusername.Text == "admin" || txtusername.Text == "examiner" || txtusername.Text == "instman")
             {
                 Response.Redirect("~/UI/index.aspx");
             }
-            
-            
-             
         }
     }
 }

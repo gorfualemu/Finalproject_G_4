@@ -13,5 +13,10 @@ namespace Finalproject_G_4.UI
         {
             lbltime.Text = DateTime.Now.ToLongDateString();
         }
+
+        protected void Timer1_Tick1(object sender, EventArgs e)
+        {
+            //lbltimer.Text =System.DateTime.Now.ToString("hh:mm:ss");
+        }
     }
 }

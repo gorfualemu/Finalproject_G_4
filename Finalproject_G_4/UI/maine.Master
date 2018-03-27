@@ -16,60 +16,54 @@
     <div class="wrapper">
         <form id="form1" runat="server">
             <div class="headmenu">
-                <asp:Image ID="img1" runat="server" ImageUrl="~/Resource/headers.PNG"></asp:Image>
-                <asp:Label ID="lbltime" runat="server" Text=" "></asp:Label>
+                 <table id="tblh">
+                    <tr id="tr1">
+                        <td id="td1">
+                            <asp:Image ID="Image1" runat="server" Height="72px" ImageUrl="~/Resource/toyota.jpg" Width="200px" />
+                        </td>
+                        <td id="td2" > Debre Brihan City Transport Agency <br/> <h6>Driving License Student Information Managment system</h6></td>
+                        <td id="td3">&nbsp; 
+                            <a href="https://www.facebook.com"><asp:Image ID="Image11" runat="server" Height="60px" ImageUrl="~/Resource/logo-facebook.png" Width="60px" /></a>
+                            &nbsp;  
+                           <a href="https://www.instagram.com"> <asp:Image ID="Image12" runat="server" Height="60px" ImageUrl="~/Resource/instagram.png" Width="60px" /></a>
+                            &nbsp; 
+                           <a href="https://www.twitter.com"> <asp:Image  ID="Image13" runat="server" Height="60px" ImageUrl="~/Resource/Twitter-Logo.png" Width="60px" /></a>
+                            &nbsp; &nbsp;
+                           <a href="https://www.youtube.com"> <asp:Image ID ="Image15" runat="server" Height="60px" ImageUrl="~/Resource/YouTube.png" Width="60px" /></a>
+                        </td>
+                    </tr>
+                </table>
+              <asp:Label ID="lbltime" runat="server" Text=" "></asp:Label>
             </div>
-            <div class="main">
+            <div class="menu">
                 <ul>
-                    <li><a href="Home.aspx">Home</a></li>
-                    <li><a href="#">About</a>
-                        <ul>
-                            <li><a href="#">About</a>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">tatal</a> </li>
-                                    <li><a href="#">challenge</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">tatal</a>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">tatal</a></li>
-                                    <li><a href="#">challenge</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">challenge</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">contact</a>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">tatal</a></li>
-                            <li><a href="#">challenge</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">main</a>
-                        <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">tatal</a></li>
-                            <li><a href="#">challenge</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">New</a></li>
-                    <li id="login"><a href="Login.aspx">login</a></li>
+                    <li id="home" runat="server"><a href="Home.aspx">Home</a></li>
+                    <li id="about" runat="server"><a href="About.aspx">About us</a></li>
+                    <li id="contact" runat="server"><a href="Contact.aspx">contact us</a></li>
+                    <li id="bookli" runat="server"><a href="Booking.aspx">Booking</a></li>
+                    <li id="notice" runat="server"><a href="ViewNotice.aspx">View Notice</a></li>
+                    <li id="login" runat="server"><a href="Login.aspx">login</a></li>
                 </ul>
             </div>
-            <div class="clear"></div>
-            <asp:ContentPlaceHolder ID="content" runat="server">
-            </asp:ContentPlaceHolder>
-            <div class="clear"></div>
-            <div class="footer">
-                @allright reserved <br/>
-                Debre Birhan City Transport Agency<br/>
-                phone  +25111645238<br/>
-                Email   DCTA12@gmail.com
-
+            <div class="clear">
             </div>
+               <asp:ContentPlaceHolder ID="content" runat="server">
+               </asp:ContentPlaceHolder>
+             <div class="nonof">
+                <table id="tblindex" style="width:100%;background-color:#000;">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="flast">
+                Debre Birhan City Transport Agency<br />
+                phone  +25111645238<br />
+                Email   DCTA12@gmail.com
+            </div>
+         <div class="footer">  @allright reserved  <br/></div>
         </form>
     </div>
 </body>

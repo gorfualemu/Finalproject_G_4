@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Finalproject_G_4.UI.AfterLogin
+namespace Finalproject_G_4.UI
 {
-    public partial class Index : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -15,9 +15,9 @@ namespace Finalproject_G_4.UI.AfterLogin
             {
                 setImageurl();
             }
+           
         }
-
-        protected void Timer1_click(object sender, EventArgs e)
+        protected void Timer1_Tick1(object sender, EventArgs e)
         {
             setImageurl();
         }
@@ -25,8 +25,7 @@ namespace Finalproject_G_4.UI.AfterLogin
         {
             Random _rand = new Random();
             int i = _rand.Next(1, 6);
-            Image17.ImageUrl = "~/movie/" + i.ToString() + ".jpg";
-        
+          ImageAnimate.ImageUrl = "~/movie/" + i.ToString() + ".jpg";
+        }
     }
     }
-}

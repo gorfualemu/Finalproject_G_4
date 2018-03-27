@@ -7,11 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Configuration;
 
-namespace Finalproject_BL.NewTrainee
+namespace Finalproject_BL.Registration
 {
-   public class Trainee
+  public class BookTo
     {
-        public string StudID { get; set; }
         public string StudInstID { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
@@ -28,17 +27,16 @@ namespace Finalproject_BL.NewTrainee
         public int Phone { get; set; }
         public string LicenseType { get; set; }
         public DateTime CurrentDate { get; set; }
-        public bool TraineeRegister(Trainee stud)
+        public bool BookingtoRegister(BookTo stud)
         {
             bool issave = false;
 
             SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["Drivinglicense"].ConnectionString);
             try
             {
-                SqlCommand cmd = new SqlCommand("sp_student", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                conn.Open();
-                cmd.Parameters.AddWithValue("@studId", stud.StudID);
+              SqlCommand cmd = new SqlCommand("sp_studenttemp", conn);
+              cmd.CommandType = CommandType.StoredProcedure;
+               conn.Open();
                 cmd.Parameters.AddWithValue("@FirstName", stud.FirstName);
                 cmd.Parameters.AddWithValue("@MiddleName", stud.MiddleName);
                 cmd.Parameters.AddWithValue("@LastName", stud.LastName);
@@ -75,5 +73,6 @@ namespace Finalproject_BL.NewTrainee
             }
             return issave;
         }
+
     }
 }

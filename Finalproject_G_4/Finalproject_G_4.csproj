@@ -94,23 +94,41 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resource\Gps.jpg" />
-    <Content Include="Resource\headers.PNG" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\Cancel.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\update.png" />
+    <Content Include="movie\1 .jpg" />
+    <Content Include="movie\2.jpg" />
+    <Content Include="movie\3.jpg" />
+    <Content Include="movie\4.jpg" />
+    <Content Include="movie\5.jpg" />
+    <Content Include="movie\6.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resource\instagram.png" />
+    <Content Include="Resource\LOGIN.jpg" />
     <Content Include="Resource\logo-facebook.png" />
-    <Content Include="Resource\Telegram_Messenger.png" />
+    <Content Include="Resource\log_picture.PNG" />
+    <Content Include="Resource\reg.jpg" />
+    <Content Include="Resource\reset.PNG" />
+    <Content Include="Resource\submit.jpg" />
     <Content Include="Resource\toyota.jpg" />
     <Content Include="Resource\Twitter-Logo.png" />
+    <Content Include="Resource\YouTube.png" />
     <Content Include="scripts\all.css" />
-    <Content Include="scripts\home_style.css" />
-    <Content Include="scripts\login.css" />
+    <Content Include="UI\homepage\About.aspx" />
+    <Content Include="UI\homepage\Booking.aspx" />
+    <Content Include="UI\homepage\Contact.aspx" />
+    <Content Include="UI\homepage\ViewNotice.aspx" />
     <Content Include="UI\Index.aspx" />
-    <Content Include="UI\Home.aspx" />
-    <Content Include="UI\Login.aspx" />
+    <Content Include="UI\homepage\Home.aspx" />
+    <Content Include="UI\homepage\Login.aspx" />
+    <Content Include="UI\NewNotice.aspx" />
+    <Content Include="UI\NewTrainee.aspx" />
+    <Content Include="UI\ViewInstitute.aspx" />
     <Content Include="UI\maine.Master" />
     <Content Include="UI\MainMaster.Master" />
     <None Include="Web.Debug.config">
@@ -125,6 +143,7 @@
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="UI\NewInstitute.aspx" />
+    <Content Include="UI\ViewUserNotice.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -132,12 +151,61 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\homepage\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\homepage\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\homepage\Booking.aspx.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\homepage\Booking.aspx.designer.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\homepage\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\homepage\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\homepage\ViewNotice.aspx.cs">
+      <DependentUpon>ViewNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\homepage\ViewNotice.aspx.designer.cs">
+      <DependentUpon>ViewNotice.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewNotice.aspx.cs">
+      <DependentUpon>NewNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NewNotice.aspx.designer.cs">
+      <DependentUpon>NewNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewTrainee.aspx.cs">
+      <DependentUpon>NewTrainee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NewTrainee.aspx.designer.cs">
+      <DependentUpon>NewTrainee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewInstitute.aspx.cs">
+      <DependentUpon>ViewInstitute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewInstitute.aspx.designer.cs">
+      <DependentUpon>ViewInstitute.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\MainMaster.Master.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
@@ -146,18 +214,18 @@
     <Compile Include="UI\MainMaster.Master.designer.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="UI\Home.aspx.cs">
+    <Compile Include="UI\homepage\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Home.aspx.designer.cs">
+    <Compile Include="UI\homepage\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Login.aspx.cs">
+    <Compile Include="UI\homepage\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Login.aspx.designer.cs">
+    <Compile Include="UI\homepage\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\maine.Master.cs">
@@ -173,6 +241,13 @@
     </Compile>
     <Compile Include="UI\NewInstitute.aspx.designer.cs">
       <DependentUpon>NewInstitute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewUserNotice.aspx.cs">
+      <DependentUpon>ViewUserNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ViewUserNotice.aspx.designer.cs">
+      <DependentUpon>ViewUserNotice.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

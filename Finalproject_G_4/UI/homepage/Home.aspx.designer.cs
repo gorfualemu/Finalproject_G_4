@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Finalproject_G_4.UI.AfterLogin {
+namespace Finalproject_G_4.UI {
     
     
-    public partial class Index {
+    public partial class Home {
         
         /// <summary>
         /// ScriptManager1 control.
@@ -40,12 +40,12 @@ namespace Finalproject_G_4.UI.AfterLogin {
         protected global::System.Web.UI.Timer Timer1;
         
         /// <summary>
-        /// Image17 control.
+        /// ImageAnimate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image17;
+        protected global::System.Web.UI.WebControls.Image ImageAnimate;
     }
 }

@@ -22,13 +22,13 @@ namespace Finalproject_G_4.UI {
         protected global::System.Web.UI.WebControls.TextBox txtusername;
         
         /// <summary>
-        /// massageerroru control.
+        /// msgusername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label massageerroru;
+        protected global::System.Web.UI.WebControls.Label msgusername;
         
         /// <summary>
         /// txtpassword control.
@@ -40,30 +40,30 @@ namespace Finalproject_G_4.UI {
         protected global::System.Web.UI.WebControls.TextBox txtpassword;
         
         /// <summary>
-        /// massageerrrorp control.
+        /// msgpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label massageerrrorp;
+        protected global::System.Web.UI.WebControls.Label msgpassword;
         
         /// <summary>
-        /// btnlogin control.
+        /// imgbtnlogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogin;
+        protected global::System.Web.UI.WebControls.ImageButton imgbtnlogin;
         
         /// <summary>
-        /// massagesuccess control.
+        /// msgsuccess control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label massagesuccess;
+        protected global::System.Web.UI.WebControls.Label msgsuccess;
     }
 }

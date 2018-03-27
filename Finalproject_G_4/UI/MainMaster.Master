@@ -11,7 +11,8 @@
     
     </asp:ContentPlaceHolder>
     <link href="../scripts/all.css" rel="stylesheet" />
-</head>
+
+ </head>
 <body>
     <div class="wrapper">
         <form id="form1" runat="server">
@@ -19,80 +20,101 @@
                 <table id="tblh">
                     <tr id="tr1">
                         <td id="td1">
-                            <asp:Image ID="Image1" runat="server" Height="72px" ImageUrl="~/Resource/toyota.jpg" Width="123px" />
+                            <asp:Image ID="Image1" runat="server" Height="72px" ImageUrl="~/Resource/toyota.jpg" Width="200px" />
                         </td>
-                        <td id="td2"> Debre Brihan City Transport Agency </td>
+                        <td id="td2"> Debre Brihan City Transport Agency<h6>Driving License Student Information Managment system</h6> </td>
                         <td id="td3">&nbsp; 
-                            <asp:ImageButton ID="ImageButton1" runat="server" Height="29px" ImageUrl="~/Resource/logo-facebook.png" />
+                            <a href="https://www.facebook.com"><asp:Image ID="Image11" runat="server" Height="60px" ImageUrl="~/Resource/logo-facebook.png" Width="60px" /></a>
                             &nbsp;  
-                            <asp:ImageButton ID="ImageButton2" runat="server" Height="28px" ImageUrl="~/Resource/instagram.png" />
+                           <a href="https://www.instagram.com"> <asp:Image ID="Image12" runat="server" Height="60px" ImageUrl="~/Resource/instagram.png" Width="60px" /></a>
                             &nbsp; 
-                            <asp:ImageButton ID="ImageButton3" runat="server" Height="29px" ImageUrl="~/Resource/Twitter-Logo.png" />
-                            &nbsp;  
-                            <asp:ImageButton ID="ImageButton4" runat="server" Height="29px" ImageUrl="~/Resource/Telegram_Messenger.png" />
+                           <a href="https://www.twitter.com"> <asp:Image  ID="Image13" runat="server" Height="60px" ImageUrl="~/Resource/Twitter-Logo.png" Width="60px" /></a>
                             &nbsp; &nbsp;
-                            <asp:ImageButton ID="ImageButton5" runat="server" Height="29px" ImageUrl="~/Resource/Gps.jpg" />
+                           <a href="https://www.youtube.com"> <asp:Image ID ="Image15" runat="server" Height="60px" ImageUrl="~/Resource/YouTube.png" Width="60px" /></a>
                         </td>
                     </tr>
                 </table>
-                <asp:Label ID="lbltime" runat="server" Text="time "></asp:Label>
-                <asp:Label ID="lblprofile" runat="server" Text="profile "></asp:Label>
+               <asp:Label ID="lbltime" runat="server" Text="time "></asp:Label>
+               <asp:Label ID="lblprofile" runat="server" Text="profile "></asp:Label>
             </div>
-            <div class="main">
+            <div class="menu">
                 <ul>
-                    <li id="h1" runat="server"><a href="Index.aspx">Home</a></li>
-                    <li id="a1" runat="server"><a href="NewInstitute.aspx">About</a>
+                    <li id="home" runat="server"><a href="Index.aspx">Home</a></li>
+                    <li id="registration" runat="server"><a href="#">Registration</a>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">tatal</a>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">tatal</a></li>
-                                    <li><a href="#">challenge</a></li>
-                                </ul>
+                            <li id="register_institute"><a href=" NewInstitute.aspx">Register Institute</a></li>
+                            <li id="register_trainee"><a href="NewTrainee.aspx">Register Trainee</a></li>
+                            <li id="register_users"><a href="#">Register Users</a></li>
+                            <li id="approve_trainee"><a href="#">Approve Trainee</a></li>
+                              <li id="view"><a href="#">View </a>
+                                  <ul>
+                                      <li id="view_institute"><a href="ViewInstitute.aspx">view Institute</a></li>
+                                      <li id="view_trainee"><a href="#">view Trainee</a></li>
+                                      <li id="view_users"><a href="#">view Users</a></li>
+                                  </ul>
                             </li>
-                            <li><a href="#">challenge</a></li>
                         </ul>
                     </li>
-                    <li id="c1" runat="server"><a href="#">contact</a>
+                    <li id="exam" runat="server"><a href="#">Exam</a>
                         <ul>
-                            <li><a href="#">About</a>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">tatal</a></li>
-                                    <li><a href="#">challenge</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">tatal</a></li>
-                            <li><a href="#">challenge</a></li>
+                            <li id="add_exam"><a href="#">Add exam</a></li>
+                            <li id="take_exam"><a href="#">Take Exam</a></li>
+                             <li id="enrolment"><a href="#">Enrolment</a></li>
+                             <li id="view_result"><a href="#">View Result</a></li>
                         </ul>
                     </li>
-                    <li id="m1" runat="server"><a href="#">main</a>
+                    <li id="attendance" runat="server"><a href="#">Attendance</a>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">tatal</a></li>
-                            <li><a href="#">challenge</a></li>
+                            <li id="take_attendance"><a href="#">Take Attendance</a></li>
+                            <li id="view_attendance"><a href="#">View Attendance</a></li>
                         </ul>
                     </li>
-                    <li id="n1" runat="server"><a href="#">New</a></li>
-                    <li id="logout" runat="server"><a href="Login.aspx">logout</a></li>
-                    <li id="login" runat="server"><a href="Login.aspx">login</a></li>
+                    <li id="account" runat="server"><a href="#">Account</a>
+                        <ul>
+                            <li id="create_account"><a href="#">create account</a></li>
+                            <li id="manage_account"><a href="#">manage account</a></li>
+                            <li><a href="#">Assign Role</a></li>
+                        </ul>
+                    </li>
+                    <li id="notice" runat="server"><a href="#">Notice</a>
+                        <ul>
+                            <li id="post_notice"><a href="NewNotice.aspx">Post Notice</a></li>
+                            <li id="view_notice"><a href="ViewUserNotice.aspx">View Notice</a></li>
+                        </ul>
+                    </li>
+                       <li id="report" runat="server"><a href="#">Report</a>
+                        <ul>
+                            <li id="admin_report"><a href="#">Admin report</a></li>
+                            <li id="user_report"><a href="#">User report</a></li>
+                        </ul>
+                    </li>
+                    <li id="logout" runat="server"><a href="homepage/Login.aspx">logout</a></li>
                 </ul>
             </div>
             <div class="clear">
             </div>
             <asp:ContentPlaceHolder ID="content" runat="server">
-
+               
+              
             </asp:ContentPlaceHolder>
+            <%--<div class="clear">
+            </div>--%>
+              <div class="nonof">
+                <table id="tblindex" style="width:100%;background-color:#000;">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
             <div class="clear">
             </div>
-            <div class="footer">
+            <div class="flast">
                 Debre Birhan City Transport Agency<br />
                 phone  +25111645238<br />
                 Email   DCTA12@gmail.com
                 <br />
-                @allright reserved
             </div>
+            <div class="footer">All  @CopyRight reserved  <br/></div>
         </form>
     </div>
 </body>
