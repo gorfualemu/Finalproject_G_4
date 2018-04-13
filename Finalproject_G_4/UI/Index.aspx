@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MainMaster.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Finalproject_G_4.UI.AfterLogin.Index" %>
+<%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../scripts/all.css" rel="stylesheet" />
 </asp:Content>
@@ -21,6 +22,8 @@
         </div>
 
         <div class="right_maine_index">
+              
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Drivinglicense %>" SelectCommand="SELECT [FirstName], [MiddleName], [LastName], [Sex], [BirthDate], [Woreda], [Kebele], [Phone], [LicenseType] FROM [Trainee]"></asp:SqlDataSource>
               
         </div>
     </div>

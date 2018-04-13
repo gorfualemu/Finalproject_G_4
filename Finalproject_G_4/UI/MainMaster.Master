@@ -11,7 +11,6 @@
     
     </asp:ContentPlaceHolder>
     <link href="../scripts/all.css" rel="stylesheet" />
-
  </head>
 <body>
     <div class="wrapper">
@@ -44,14 +43,14 @@
                         <ul>
                             <li id="register_institute"><a href=" NewInstitute.aspx">Register Institute</a></li>
                             <li id="register_trainee"><a href="NewTrainee.aspx">Register Trainee</a></li>
-                            <li id="register_users"><a href="#">Register Users</a></li>
+                            <li id="register_users"><a href="NewUsers.aspx">Register Users</a></li>
                             <li id="approve_trainee"><a href="#">Approve Trainee</a></li>
-                              <li id="view"><a href="#">View </a>
-                                  <ul>
-                                      <li id="view_institute"><a href="ViewInstitute.aspx">view Institute</a></li>
-                                      <li id="view_trainee"><a href="#">view Trainee</a></li>
-                                      <li id="view_users"><a href="#">view Users</a></li>
-                                  </ul>
+                            <li id="view"><a href="#">View </a>
+                                <ul>
+                                    <li id="view_institute"><a href="ViewInstitute.aspx">view Institute</a></li>
+                                    <li id="view_trainee"><a href="#">view Trainee</a></li>
+                                    <li id="view_users"><a href="#">view Users</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </li>
@@ -71,7 +70,7 @@
                     </li>
                     <li id="account" runat="server"><a href="#">Account</a>
                         <ul>
-                            <li id="create_account"><a href="#">create account</a></li>
+                            <li id="create_account"><a href=" NewUserAccount.aspx">create account</a></li>
                             <li id="manage_account"><a href="#">manage account</a></li>
                             <li><a href="#">Assign Role</a></li>
                         </ul>

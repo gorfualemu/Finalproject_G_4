@@ -10,7 +10,7 @@
 namespace Finalproject_G_4.UI {
     
     
-    public partial class NewInstitute {
+    public partial class NewUsers {
         
         /// <summary>
         /// txtid control.
@@ -22,31 +22,40 @@ namespace Finalproject_G_4.UI {
         protected global::System.Web.UI.WebControls.TextBox txtid;
         
         /// <summary>
-        /// txtname control.
+        /// ddlInstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtname;
+        protected global::System.Web.UI.WebControls.DropDownList ddlInstName;
         
         /// <summary>
-        /// txtzone control.
+        /// txtfname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtzone;
+        protected global::System.Web.UI.WebControls.TextBox txtfname;
         
         /// <summary>
-        /// txttown control.
+        /// txtmname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttown;
+        protected global::System.Web.UI.WebControls.TextBox txtmname;
+        
+        /// <summary>
+        /// txtlname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtlname;
         
         /// <summary>
         /// txtphone control.
@@ -58,31 +67,22 @@ namespace Finalproject_G_4.UI {
         protected global::System.Web.UI.WebControls.TextBox txtphone;
         
         /// <summary>
-        /// txtfax control.
+        /// ddlsex control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtfax;
+        protected global::System.Web.UI.WebControls.DropDownList ddlsex;
         
         /// <summary>
-        /// txtstartdate control.
+        /// txtemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtstartdate;
-        
-        /// <summary>
-        /// txtowner control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtowner;
+        protected global::System.Web.UI.WebControls.TextBox txtemail;
         
         /// <summary>
         /// txtkebele control.
@@ -94,6 +94,15 @@ namespace Finalproject_G_4.UI {
         protected global::System.Web.UI.WebControls.TextBox txtkebele;
         
         /// <summary>
+        /// Button4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button4;
+        
+        /// <summary>
         /// btnsave control.
         /// </summary>
         /// <remarks>
@@ -103,13 +112,22 @@ namespace Finalproject_G_4.UI {
         protected global::System.Web.UI.WebControls.ImageButton btnsave;
         
         /// <summary>
-        /// btnsave0 control.
+        /// btnreset control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnsave0;
+        protected global::System.Web.UI.WebControls.ImageButton btnreset;
+        
+        /// <summary>
+        /// btndelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btndelete;
         
         /// <summary>
         /// msgsuccess control.

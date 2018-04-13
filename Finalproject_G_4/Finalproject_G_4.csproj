@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,6 +43,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -76,22 +79,22 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Delete.png" />
@@ -128,6 +131,8 @@
     <Content Include="UI\homepage\Login.aspx" />
     <Content Include="UI\NewNotice.aspx" />
     <Content Include="UI\NewTrainee.aspx" />
+    <Content Include="UI\NewUserAccount.aspx" />
+    <Content Include="UI\NewUsers.aspx" />
     <Content Include="UI\ViewInstitute.aspx" />
     <Content Include="UI\maine.Master" />
     <Content Include="UI\MainMaster.Master" />
@@ -200,6 +205,20 @@
     <Compile Include="UI\NewTrainee.aspx.designer.cs">
       <DependentUpon>NewTrainee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI\NewUserAccount.aspx.cs">
+      <DependentUpon>NewUserAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NewUserAccount.aspx.designer.cs">
+      <DependentUpon>NewUserAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewUsers.aspx.cs">
+      <DependentUpon>NewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NewUsers.aspx.designer.cs">
+      <DependentUpon>NewUsers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\ViewInstitute.aspx.cs">
       <DependentUpon>ViewInstitute.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -253,6 +272,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Finalproject_BL\Finalproject_BL.csproj">

@@ -28,6 +28,12 @@ namespace Finalproject_BL.NewTrainee
         public int Phone { get; set; }
         public string LicenseType { get; set; }
         public DateTime CurrentDate { get; set; }
+        //document attricutes 
+        public byte[] Photo { get; set; }
+        public byte[] Medical { get; set; }
+        public byte[] Card { get; set; }
+        public byte[] IdentityCard { get; set; }
+
         public bool TraineeRegister(Trainee stud)
         {
             bool issave = false;
@@ -38,6 +44,14 @@ namespace Finalproject_BL.NewTrainee
                 SqlCommand cmd = new SqlCommand("sp_student", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 conn.Open();
+                //to create desualt account 
+                cmd.Parameters.AddWithValue("@UserName",stud.StudID);
+                cmd.Parameters.AddWithValue("@Password", stud.FirstName+"abcd1234");
+                cmd.Parameters.AddWithValue("@UserRole","Trainee");
+                cmd.Parameters.AddWithValue("@AccountStudID",stud.StudID);
+                cmd.Parameters.AddWithValue("@AccountUserID", "");
+                
+                //register trainee 
                 cmd.Parameters.AddWithValue("@studId", stud.StudID);
                 cmd.Parameters.AddWithValue("@FirstName", stud.FirstName);
                 cmd.Parameters.AddWithValue("@MiddleName", stud.MiddleName);
@@ -55,6 +69,14 @@ namespace Finalproject_BL.NewTrainee
                 cmd.Parameters.AddWithValue("@Licensetype", stud.LicenseType);
                 cmd.Parameters.AddWithValue("@currentdate", stud.CurrentDate);
                 cmd.Parameters.AddWithValue("@StudInstID", stud.StudInstID);
+                
+                //register documents
+                cmd.Parameters.AddWithValue("@DocumentStudID",stud.StudID);
+                cmd.Parameters.AddWithValue("@Photo",stud.Photo);
+                cmd.Parameters.AddWithValue("@Medical", stud.Medical);
+                cmd.Parameters.AddWithValue("@Card", stud.Card);
+                cmd.Parameters.AddWithValue("@IdentityCard", stud.IdentityCard);
+
                 int row = cmd.ExecuteNonQuery();
                 if (row > 0)
                 {

@@ -1,6 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/MainMaster.Master" AutoEventWireup="true" CodeBehind="NewTrainee.aspx.cs" Inherits="Finalproject_G_4.UI.NewTrainee" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../scripts/all.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            text-decoration-style: wavy;
+            text-align: right;
+            min-width: 100px;
+            height: 50px;
+        }
+        .auto-style2 {
+            text-align: center;
+            min-width: 100px;
+            height: 50px;
+        }
+        .auto-style3 {
+            text-align: left;
+            min-width: 100px;
+            height: 50px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
     <div class="largeindex">
@@ -183,14 +201,14 @@
                                 <tr>
                                     <td class="tdleft">studPhoto</td>
                                     <td class="tdcenter">
-                                        <asp:TextBox ID="txtphonto" type="file" runat="server" ></asp:TextBox>
+                                        <asp:FileUpload ID="Filephoto" runat="server" />
                                     </td>
                                     <td class="tdright">&nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td class="tdleft">studDocument</td>
                                     <td  class="tdcenter">
-                                        <asp:TextBox ID="txtdocument" type="file" runat="server" ></asp:TextBox>
+                                        <asp:FileUpload ID="FileDocument" runat="server" />
                                     </td>
                                     <td class="tdright">
                                         &nbsp;</td>
@@ -198,35 +216,46 @@
                                 <tr>
                                     <td class="tdleft">studMedical</td>
                                     <td  class="tdcenter">
-                                        <asp:TextBox ID="txtmedical" type="file" runat="server" ></asp:TextBox>
+                                        <asp:FileUpload ID="FileMedical" runat="server" />
                                     </td>
                                     <td class="tdright">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td class="tdleft">studIdentity</td>
-                                    <td  class="tdcenter">
-                                        <asp:TextBox ID="txtidentity" type="file" runat="server" ></asp:TextBox>
+                                    <td class="auto-style1">studIdentity</td>
+                                    <td  class="auto-style2">
+                                        <asp:FileUpload ID="FileIdentity" runat="server" />
+                                        <br />
                                     </td>
-                                    <td class="tdright"> &nbsp;</td>
+                                    <td class="auto-style3"> </td>
                                 </tr>
                                 <tr>
-                                    <td class="tdleft"></td>
-                                    <td  class="tdcenter"> </td>
+                                    <td class="tdleft">
+                                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                                    </td>
+                                    <td  class="tdcenter"> 
+                                        <asp:Image ID="Image16" runat="server" Height="58px" Width="97px" BorderStyle="Dashed" />
+                                    </td>
                                     <td class="tdright"></td>
                                 </tr>
                                  <tr>
                                     <td class="tdleft"></td>
-                                    <td  class="tdcenter"></td>
+                                    <td  class="tdcenter">
+                                        <asp:Image ID="Image17" runat="server" BorderStyle="Dashed" Height="58px" Width="97px" />
+                                     </td>
                                     <td class="tdright"></td>
                                 </tr>
                                  <tr>
                                     <td class="tdleft"></td>
-                                    <td  class="tdcenter"></td>
+                                    <td  class="tdcenter">
+                                        <asp:Image ID="Image18" runat="server" BorderStyle="Dashed" Height="58px" Width="97px" />
+                                     </td>
                                     <td class="tdright"></td>
                                 </tr>
                                  <tr>
                                     <td class="tdleft"></td>
-                                    <td  class="tdcenter"> </td>
+                                    <td  class="tdcenter"> 
+                                        <asp:Image ID="Image19" runat="server" BorderColor="Black" BorderStyle="Dashed" Height="58px" Width="97px" />
+                                     </td>
                                     <td class="tdright"></td>
                                 </tr>
                             </table>
@@ -244,6 +273,7 @@
                     <td class="tdright">
                         <asp:Label ID="msgerror" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
                         <asp:Label ID="msgsuccess" runat="server" Text=" " ForeColor="#006600"></asp:Label>
+                        <asp:Label ID="msgdocumenterror" runat="server" Text="Label"></asp:Label>
                         <br />
                     </td>
                 </tr>

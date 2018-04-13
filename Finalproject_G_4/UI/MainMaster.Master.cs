@@ -5,6 +5,8 @@ namespace Finalproject_G_4.UI
     {
         public string username{ get; set; }
         public string password { get; set; }
+        public string Role { get; set; }
+
 
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -15,7 +15,9 @@ namespace Finalproject_G_4.UI
     {
 
         SqlConnection conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["Drivinglicense"].ConnectionString);
-        string id = "DBU";
+        string substring = "DBR";
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -26,27 +28,31 @@ namespace Finalproject_G_4.UI
 
         private void GeneratAutoId()
         {
+            int sb;
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand(" select count(InstID) from Institute", conn);
-                int i = Convert.ToInt32(cmd.ExecuteScalar());
+                SqlCommand cmd = new SqlCommand(" select max(InstID) from Institute", conn);
+           
+                 string id = cmd.ExecuteScalar().ToString();
+                 string subId = id.Substring(4,3);
+                 sb = Convert.ToInt32(subId);
+                    sb++;
+                    DateTime Gregorian = DateTime.Now;
+                    DateTime Ethiopian;
+                    if (Gregorian.Month >= 1 && Gregorian.Month <= 8)
+                    {
+                        Ethiopian = Gregorian.AddYears(-8);
+                    }
+                    else
+                    {
+                        Ethiopian = Gregorian.AddYears(-7);
+                    }
+                    string year = Ethiopian.Year.ToString();
+                    string subyear = year.Substring(2, 2);
+                    txtid.Text = substring + "/" + sb.ToString() + "/" + subyear;
+
                 conn.Close();
-                i++;
-                
-                DateTime Gregorian = DateTime.Now;
-                DateTime Ethiopian;
-                if (Gregorian.Month >= 1 && Gregorian.Month <= 8)
-                {
-               Ethiopian = Gregorian.AddYears(-8);
-                }
-                else
-                {
-                    Ethiopian = Gregorian.AddYears(-7);
-                }
-                 string year= Ethiopian.Year.ToString();
-                string subyear = year.Substring(2,2);
-                txtid.Text = id + "/" + i.ToString() + "/" + subyear;
             }
             catch (Exception er)
             {

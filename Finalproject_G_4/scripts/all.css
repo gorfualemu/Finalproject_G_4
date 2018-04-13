@@ -280,6 +280,19 @@ body {
      padding-top:10px;
      
  }
+ .left_nav{
+     width:300px;
+     height:650px;
+     float:left;
+     background-color:#a8a8b0;
+ }
+ .right_maine{
+     float:left;
+     margin-left:10px;
+     background-color:#fff;
+     min-width:950px;
+ }
+ 
 /*for  login page */
 
 .largehome {
@@ -310,29 +323,29 @@ body {
 .tdleft {
     text-decoration-style:wavy;
     text-align: right;
-  min-width:100px;
-    height:40px;
+    min-width:100px;
+    height:50px;
 }
 
 .tdcenter {
-    text-align:center;
+     text-align:center;
      min-width:100px;
-     height:40px;
+     height:50px;
 }
 .tdright {
   text-align: left;
    min-width:100px;
-   height:40px;
+   height:50px;
 }
 /*trainee registeration*/
 .tbltrainee{
-    width:98%;
+    width:90%;
     background-color:aqua;
 }
 .fieldset_trainee{
     margin-right:10px;
     padding:15px;
-    width:95%;
+    width:90%;
 }
 .fielset_document{
    min-width:300px;

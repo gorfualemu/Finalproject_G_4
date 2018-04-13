@@ -10,88 +10,79 @@
 namespace Finalproject_G_4.UI {
     
     
-    public partial class NewInstitute {
+    public partial class NewUserAccount {
         
         /// <summary>
-        /// txtid control.
+        /// txtuserid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtid;
+        protected global::System.Web.UI.WebControls.TextBox txtuserid;
         
         /// <summary>
-        /// txtname control.
+        /// btnsearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtname;
+        protected global::System.Web.UI.WebControls.Button btnsearch;
         
         /// <summary>
-        /// txtzone control.
+        /// txtfname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtzone;
+        protected global::System.Web.UI.WebControls.TextBox txtfname;
         
         /// <summary>
-        /// txttown control.
+        /// txtlname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttown;
+        protected global::System.Web.UI.WebControls.TextBox txtlname;
         
         /// <summary>
-        /// txtphone control.
+        /// txtusername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtphone;
+        protected global::System.Web.UI.WebControls.TextBox txtusername;
         
         /// <summary>
-        /// txtfax control.
+        /// txtpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtfax;
+        protected global::System.Web.UI.WebControls.TextBox txtpassword;
         
         /// <summary>
-        /// txtstartdate control.
+        /// txtconfirmpass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtstartdate;
+        protected global::System.Web.UI.WebControls.TextBox txtconfirmpass;
         
         /// <summary>
-        /// txtowner control.
+        /// ddlrole control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtowner;
-        
-        /// <summary>
-        /// txtkebele control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtkebele;
+        protected global::System.Web.UI.WebControls.DropDownList ddlrole;
         
         /// <summary>
         /// btnsave control.
@@ -103,13 +94,13 @@ namespace Finalproject_G_4.UI {
         protected global::System.Web.UI.WebControls.ImageButton btnsave;
         
         /// <summary>
-        /// btnsave0 control.
+        /// btnreset control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnsave0;
+        protected global::System.Web.UI.WebControls.ImageButton btnreset;
         
         /// <summary>
         /// msgsuccess control.
